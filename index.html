@@ -29,7 +29,7 @@
       color: #bbbbbb;
     }
     section {
-      padding: 40px 20px;
+      padding: 20px 20px 0px;
       max-width: 800px;
       margin: auto;
     }
@@ -37,13 +37,6 @@
       border-bottom: 2px solid #333;
       padding-bottom: 5px;
       color: #ffffff;
-    }
-    ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-    li {
-      margin-bottom: 10px;
     }
     footer {
       background: #1f1f1f;
@@ -59,32 +52,92 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .publication {
+      border: 1px solid #333;
+      background: #1a1a1a;
+      padding: 16px 18px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+
+    .pub-title {
+      font-weight: 600;
+      font-size: 1.05em;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .pub-meta {
+      font-size: 0.95em;
+      color: #cccccc;
+      margin-bottom: 8px;
+    }
+
+    .pub-links {
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Simcha van Collem</h1>
-    <!-- <p>PhD Student in [Your Field] | [Your University]</p> -->
   </header>
 
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a PhD student supervised by <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a> working on the <a href="https://robbertkrebbers.nl/coconut.html">COCONUT project</a> at the department of software science at the Radboud University Nijmegen.
+      I am a PhD student supervised by <a href="https://robbertkrebbers.nl/">Robbert Krebbers</a> working on the <a href="https://robbertkrebbers.nl/coconut.html">COCONUT project</a> at the <a href="https://sws.cs.ru.nl/">Department of Software Science</a>, Radboud University Nijmegen.
+      My research involves designing new program logics for the <a href="https://iris-project.org">Iris Framework</a>.
+      I am generally interested in studying the semantics of programming language, type systems, foundations of mathematics and logic,
+      and like to formalize my work using a proof assistant.
     </p>
   </section>
 
-  <!-- <section id="publications">
+  <section id="publications">
     <h2>Publications</h2>
-    <ul>
-      <li><strong>Paper Title</strong>, Author(s). <em>Conference/Journal</em>, Year. <a href="#">[PDF]</a></li>
-    </ul>
-  </section> -->
+    <div class="publication">
+      <div class="pub-title">
+         A Relational Separation Logic for Effect Handlers
+      </div>
+      <div class="pub-meta">
+        Paulo Emílio de Vilhena, Simcha van Collem, Ines Wright, Robbert Krebbers  <br />
+        <em>Principles of Programming Languages (POPL)</em>, January 2026
+      </div>
+      <div class="pub-links">
+        <a href="papers/blaze.pdf">pdf</a> |
+        <a href="https://doi.org/10.1145/3776676">doi</a> |
+        <a href="slides/blaze.pdf">slides (by Paulo)</a> |
+        <a href="https://www.youtube.com/watch?v=HjWjrERyHi8">talk (by Paulo)</a> |
+        <a href="https://github.com/DeVilhena-Paulo/blaze">artifact</a>
+      </div>
+    </div>
+
+    <div class="publication">
+      <div class="pub-title">
+        Initial Algebras of Domains via Quotient Inductive-Inductive Types
+      </div>
+      <div class="pub-meta">
+        Simcha van Collem, Niels van der Weide, Herman Geuvers <br />
+        <em>Mathematical Foundations of Programming Semantics (MFPS)</em>, June 2025
+      </div>
+      <div class="pub-links">
+        <a href="papers/initial-algebras-via-qiits.pdf">pdf</a> |
+        <a href="https://doi.org/10.46298/entics.16512">doi</a> |
+        <a href="slides/initial-algebras-via-qiits.pdf">slides</a> |
+        <a href="https://www.youtube.com/watch?v=XnitpkTzjXU">talk</a> |
+        <a href="artifacts/qiits/Paper.html">artifact</a>
+      </div>
+    </div>
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:simcha.vancollem@ru.nl">simcha.vancollem@ru.nl</a></p>
+    <ul>
+      <li>Office: <a href="https://www.ru.nl/en/about-us/the-campus/buildings-and-spaces/mercator-i">Mercator 1, 1.12</a></li>
+      <li>Email: simcha.vancollem [at] ru.nl</li>
+    </ul>
   </section>
 </body>
 </html>
